@@ -1,0 +1,291 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-09 11:46:33.430660",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "department",
+  "column_break_enzm",
+  "company",
+  "month",
+  "column_break_vkhm",
+  "branch",
+  "year",
+  "attendance_summary_section",
+  "total_days",
+  "absent_days",
+  "weekly_off",
+  "column_break_prki",
+  "working_days",
+  "half_days",
+  "holidays",
+  "column_break_hbam",
+  "present_days",
+  "leave_days",
+  "time_summary_section",
+  "total_working_hours",
+  "late_minutes",
+  "column_break_cijs",
+  "overtime_hours",
+  "early_exit_count",
+  "column_break_xtks",
+  "late_count",
+  "early_exit_minutes",
+  "payroll_summary_section",
+  "payable_days",
+  "column_break_hbwi",
+  "lop_days",
+  "column_break_cmhx",
+  "payroll_processed",
+  "payroll_entry",
+  "system_information_section",
+  "generated_on",
+  "column_break_lcrt",
+  "generated_by",
+  "section_break_vlpl",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_enzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vkhm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "attendance_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance Summary"
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Int",
+   "label": "Total Days"
+  },
+  {
+   "fieldname": "absent_days",
+   "fieldtype": "Float",
+   "label": "Absent Days"
+  },
+  {
+   "fieldname": "weekly_off",
+   "fieldtype": "Float",
+   "label": "Weekly Off"
+  },
+  {
+   "fieldname": "column_break_prki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "working_days",
+   "fieldtype": "Float",
+   "label": "Working Days"
+  },
+  {
+   "fieldname": "half_days",
+   "fieldtype": "Float",
+   "label": "Half Days"
+  },
+  {
+   "fieldname": "holidays",
+   "fieldtype": "Float",
+   "label": "Holidays"
+  },
+  {
+   "fieldname": "column_break_hbam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "present_days",
+   "fieldtype": "Float",
+   "label": "Present Days"
+  },
+  {
+   "fieldname": "leave_days",
+   "fieldtype": "Float",
+   "label": "Leave Days"
+  },
+  {
+   "fieldname": "time_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Time Summary"
+  },
+  {
+   "fieldname": "total_working_hours",
+   "fieldtype": "Float",
+   "label": "Total Working Hours"
+  },
+  {
+   "fieldname": "late_minutes",
+   "fieldtype": "Int",
+   "label": "Late Minutes"
+  },
+  {
+   "fieldname": "column_break_cijs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overtime_hours",
+   "fieldtype": "Float",
+   "label": "Overtime Hours"
+  },
+  {
+   "fieldname": "early_exit_count",
+   "fieldtype": "Int",
+   "label": "Early Exit Count"
+  },
+  {
+   "fieldname": "column_break_xtks",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "late_count",
+   "fieldtype": "Int",
+   "label": "Late Count"
+  },
+  {
+   "fieldname": "early_exit_minutes",
+   "fieldtype": "Int",
+   "label": "Early Exit Minutes"
+  },
+  {
+   "fieldname": "payroll_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Payroll Summary"
+  },
+  {
+   "fieldname": "payable_days",
+   "fieldtype": "Float",
+   "label": "Payable Days"
+  },
+  {
+   "fieldname": "column_break_hbwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lop_days",
+   "fieldtype": "Float",
+   "label": "LOP Days"
+  },
+  {
+   "fieldname": "column_break_cmhx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "payroll_processed",
+   "fieldtype": "Check",
+   "label": "Payroll Processed"
+  },
+  {
+   "fieldname": "payroll_entry",
+   "fieldtype": "Link",
+   "label": "Payroll Entry",
+   "options": "Payroll Entry"
+  },
+  {
+   "fieldname": "system_information_section",
+   "fieldtype": "Section Break",
+   "label": "System Information"
+  },
+  {
+   "fieldname": "generated_on",
+   "fieldtype": "Datetime",
+   "label": "Generated On"
+  },
+  {
+   "fieldname": "column_break_lcrt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "generated_by",
+   "fieldtype": "Link",
+   "label": "Generated By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_vlpl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-09 11:58:59.782072",
+ "modified_by": "Administrator",
+ "module": "Attendance Management System",
+ "name": "Monthly Attendance Summary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

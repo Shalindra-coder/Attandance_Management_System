@@ -1,0 +1,263 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-08 14:37:18.919080",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rule_name",
+  "shift_type",
+  "column_break_oads",
+  "company",
+  "start_date",
+  "column_break_vfoj",
+  "is_active",
+  "end_date",
+  "overtime_configuration_section",
+  "minimum_overtime_hours",
+  "round_off_method",
+  "column_break_lgdz",
+  "maximum_overtime_hours",
+  "round_off_value_minutes",
+  "column_break_ubvc",
+  "overtime_starts_after_hours",
+  "approval_settings_section",
+  "approval_required",
+  "column_break_uuch",
+  "approver_role",
+  "column_break_qtry",
+  "auto_approve_overtime",
+  "overtime_calculation_section",
+  "calculation_method",
+  "include_weekly_off",
+  "column_break_uijb",
+  "include_break_time",
+  "column_break_nafr",
+  "include_holidays",
+  "limits_section",
+  "maximum_ot_per_day",
+  "column_break_lqfb",
+  "maximum_ot_per_month",
+  "remarks_section",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_oads",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vfoj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "overtime_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "Overtime Configuration"
+  },
+  {
+   "fieldname": "minimum_overtime_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Minimum Overtime (Hours)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "round_off_method",
+   "fieldtype": "Select",
+   "label": "Round Off Method",
+   "options": "No Round Off\nNearest 15 Minutes\nNearest 30 Minutes\nNearest 1 Hour\nFloor\nCeiling"
+  },
+  {
+   "fieldname": "column_break_lgdz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_overtime_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Maximum Overtime (Hours)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ubvc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overtime_starts_after_hours",
+   "fieldtype": "Float",
+   "label": "Overtime Starts After (Hours)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "round_off_value_minutes",
+   "fieldtype": "Int",
+   "label": "Round Off Value (Minutes)"
+  },
+  {
+   "fieldname": "approval_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Approval Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "approval_required",
+   "fieldtype": "Check",
+   "label": "Approval Required"
+  },
+  {
+   "fieldname": "column_break_uuch",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approver_role",
+   "fieldtype": "Link",
+   "label": "Approver Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "column_break_qtry",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_approve_overtime",
+   "fieldtype": "Check",
+   "label": "Auto Approve Overtime"
+  },
+  {
+   "fieldname": "overtime_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Overtime Calculation"
+  },
+  {
+   "fieldname": "calculation_method",
+   "fieldtype": "Select",
+   "label": "Calculation Method",
+   "options": "\nActual Working Hours\nApproved Working Hours\nFirst In - Last Out\nValid Check-in Check-out Pair",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "include_weekly_off",
+   "fieldtype": "Check",
+   "label": "Include Weekly Off"
+  },
+  {
+   "fieldname": "column_break_uijb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_break_time",
+   "fieldtype": "Check",
+   "label": "Include Break Time"
+  },
+  {
+   "fieldname": "column_break_nafr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_holidays",
+   "fieldtype": "Check",
+   "label": "Include Holidays"
+  },
+  {
+   "fieldname": "limits_section",
+   "fieldtype": "Section Break",
+   "label": "Limits"
+  },
+  {
+   "fieldname": "maximum_ot_per_day",
+   "fieldtype": "Float",
+   "label": "Maximum OT Per Day"
+  },
+  {
+   "fieldname": "column_break_lqfb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_ot_per_month",
+   "fieldtype": "Float",
+   "label": "Maximum OT Per Month"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "shift_type",
+   "fieldtype": "Link",
+   "label": "Shift Type",
+   "options": "Shift Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-17 15:04:18.077273",
+ "modified_by": "Administrator",
+ "module": "Attendance Management System",
+ "name": "Overtime Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

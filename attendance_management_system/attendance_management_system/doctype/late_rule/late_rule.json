@@ -1,0 +1,277 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-08 13:52:19.860938",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "rule_name",
+  "shift_type",
+  "column_break_wytb",
+  "company",
+  "start_date",
+  "column_break_hlbi",
+  "is_active",
+  "end_date",
+  "late_entry_configuration_section",
+  "late_after_minutes",
+  "column_break_rxqg",
+  "grace_time_minutes",
+  "column_break_ywwd",
+  "count_late_entry",
+  "penalty_configuration_section",
+  "deduction_starts_after",
+  "penalty_value",
+  "column_break_oxzl",
+  "maximum_late_per_month",
+  "column_break_wvhm",
+  "penalty_type",
+  "salary_deduction_section",
+  "deduct_salary",
+  "column_break_pzui",
+  "deduction_unit",
+  "column_break_bpci",
+  "deduction_value",
+  "monthly_reset_section",
+  "reset_every_month",
+  "column_break_adnz",
+  "carry_forward_late_count",
+  "approval_settings_section",
+  "approval_required",
+  "column_break_jmqf",
+  "approver_role",
+  "remarks_section",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wytb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hlbi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "late_entry_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "Late Entry Configuration"
+  },
+  {
+   "fieldname": "late_after_minutes",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Late After (Minutes)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rxqg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grace_time_minutes",
+   "fieldtype": "Int",
+   "label": "Grace Time (Minutes)"
+  },
+  {
+   "fieldname": "column_break_ywwd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "count_late_entry",
+   "fieldtype": "Check",
+   "label": "Count Late Entry"
+  },
+  {
+   "fieldname": "penalty_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "Penalty Configuration"
+  },
+  {
+   "fieldname": "deduction_starts_after",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Deduction Starts After",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_oxzl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_late_per_month",
+   "fieldtype": "Int",
+   "label": "Maximum Late Per Month"
+  },
+  {
+   "fieldname": "column_break_wvhm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "penalty_type",
+   "fieldtype": "Select",
+   "label": "Penalty Type",
+   "options": "\nNo Penalty\nWarning\nSalary Deduction\nHalf Day\nFull Day\nLeave Deduction"
+  },
+  {
+   "fieldname": "penalty_value",
+   "fieldtype": "Float",
+   "label": "Penalty Value"
+  },
+  {
+   "fieldname": "salary_deduction_section",
+   "fieldtype": "Section Break",
+   "label": "Salary Deduction"
+  },
+  {
+   "default": "0",
+   "fieldname": "deduct_salary",
+   "fieldtype": "Check",
+   "label": "Deduct Salary"
+  },
+  {
+   "fieldname": "column_break_pzui",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deduction_unit",
+   "fieldtype": "Select",
+   "label": "Deduction Unit",
+   "options": "\nMinutes\nHours\nHalf Day\nFull Day\nFixed Amount"
+  },
+  {
+   "fieldname": "column_break_bpci",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deduction_value",
+   "fieldtype": "Float",
+   "label": "Deduction Value"
+  },
+  {
+   "fieldname": "monthly_reset_section",
+   "fieldtype": "Section Break",
+   "label": "Monthly Reset"
+  },
+  {
+   "default": "0",
+   "fieldname": "reset_every_month",
+   "fieldtype": "Check",
+   "label": "Reset Every Month"
+  },
+  {
+   "fieldname": "column_break_adnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "carry_forward_late_count",
+   "fieldtype": "Check",
+   "label": "Carry Forward Late Count"
+  },
+  {
+   "fieldname": "approval_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Approval Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "approval_required",
+   "fieldtype": "Check",
+   "label": "Approval Required"
+  },
+  {
+   "fieldname": "column_break_jmqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approver_role",
+   "fieldtype": "Link",
+   "label": "Approver Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "shift_type",
+   "fieldtype": "Link",
+   "label": "Shift Type",
+   "options": "Shift Type",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-17 15:06:14.276008",
+ "modified_by": "Administrator",
+ "module": "Attendance Management System",
+ "name": "Late Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

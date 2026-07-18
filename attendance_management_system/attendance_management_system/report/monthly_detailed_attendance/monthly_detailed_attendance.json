@@ -1,0 +1,158 @@
+{
+ "add_total_row": 1,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-06-29 10:15:53.388730",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-07-18 09:57:13.514746",
+ "modified_by": "Administrator",
+ "module": "Attendance Management System",
+ "mq_filters": [],
+ "name": "Monthly Detailed Attendance",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Employee",
+ "report_name": "Monthly Detailed Attendance",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Employee Self Service"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "Employee Self Service"
+  },
+  {
+   "role": "HO Accounts Manager"
+  },
+  {
+   "role": "HO Accounts User Direct Taxes"
+  },
+  {
+   "role": "HO Accounts User Indirect Taxes"
+  },
+  {
+   "role": "HO Accounts User Payment"
+  },
+  {
+   "role": "HO Accounts User Sales"
+  },
+  {
+   "role": "HO Admin User"
+  },
+  {
+   "role": "HO Purchase User"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Management"
+  },
+  {
+   "role": "Site Accounts User"
+  },
+  {
+   "role": "Site HR Manager"
+  },
+  {
+   "role": "Site HR User"
+  },
+  {
+   "role": "Site Stores User"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "Management"
+  },
+  {
+   "role": "HO Accounts User Indirect Taxes"
+  },
+  {
+   "role": "HO Accounts User Direct Taxes"
+  },
+  {
+   "role": "HO Accounts Manager"
+  },
+  {
+   "role": "Site HR User"
+  },
+  {
+   "role": "Site HR Manager"
+  },
+  {
+   "role": "HO Admin User"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Employee Self Service"
+  },
+  {
+   "role": "HO Accounts User Payment"
+  },
+  {
+   "role": "HO Purchase User"
+  },
+  {
+   "role": "Site Stores User"
+  },
+  {
+   "role": "HO Accounts User Sales"
+  },
+  {
+   "role": "Site Accounts User"
+  },
+  {
+   "role": "HO HR Manager"
+  },
+  {
+   "role": "HO HR User"
+  },
+  {
+   "role": "Site Store Assistant"
+  },
+  {
+   "role": "HO Accounts Manager Purchase"
+  },
+  {
+   "role": "Site Head"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

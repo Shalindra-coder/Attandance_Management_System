@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-08 12:55:55.067848",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rule_name",
+  "overtime_starts_after_hours",
+  "column_break_yptv",
+  "company",
+  "maximum_overtime_hours",
+  "column_break_zwfw",
+  "minimum_hours_for_present",
+  "enable_grace_time",
+  "column_break_iyqp",
+  "minimum_hours_for_half_day",
+  "section_break_bixq",
+  "grace_time_minutes",
+  "working_hours_calculation",
+  "column_break_vqte",
+  "auto_mark_absent",
+  "round_off_working_hours",
+  "column_break_uwop",
+  "allow_multiple_punches",
+  "round_off_method",
+  "column_break_urnt",
+  "missing_punch_action",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "overtime_starts_after_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Overtime Starts After (Hours)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yptv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maximum_overtime_hours",
+   "fieldtype": "Float",
+   "label": "Maximum Overtime (Hours)"
+  },
+  {
+   "fieldname": "column_break_zwfw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "minimum_hours_for_present",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Minimum Hours for Present",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_grace_time",
+   "fieldtype": "Check",
+   "label": "Enable Grace Time"
+  },
+  {
+   "fieldname": "column_break_iyqp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "minimum_hours_for_half_day",
+   "fieldtype": "Float",
+   "label": "Minimum Hours for Half Day",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_bixq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grace_time_minutes",
+   "fieldtype": "Int",
+   "label": "Grace Time (Minutes)"
+  },
+  {
+   "fieldname": "working_hours_calculation",
+   "fieldtype": "Select",
+   "label": "Working Hours Calculation",
+   "options": "First IN-Last OUT\nEvery Valid Pair"
+  },
+  {
+   "fieldname": "column_break_vqte",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_mark_absent",
+   "fieldtype": "Check",
+   "label": "Auto Mark Absent"
+  },
+  {
+   "default": "0",
+   "fieldname": "round_off_working_hours",
+   "fieldtype": "Check",
+   "label": "Round Off Working Hours"
+  },
+  {
+   "fieldname": "column_break_uwop",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_multiple_punches",
+   "fieldtype": "Check",
+   "label": "Allow Multiple Punches"
+  },
+  {
+   "fieldname": "round_off_method",
+   "fieldtype": "Select",
+   "label": "Round Off Method",
+   "options": "\nNearest 15 Min\n30 Min\n1 Hour"
+  },
+  {
+   "fieldname": "column_break_urnt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "missing_punch_action",
+   "fieldtype": "Select",
+   "label": "Missing Punch Action",
+   "options": "\nIgnore\nAbsent\nApproval Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-08 13:38:23.947604",
+ "modified_by": "Administrator",
+ "module": "Attendance Management System",
+ "name": "Attendance Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
