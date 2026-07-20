@@ -30,7 +30,8 @@
   "reason",
   "attachment",
   "column_break_sjpn",
-  "manager_remarks"
+  "manager_remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -169,12 +170,23 @@
    "fieldname": "manager_remarks",
    "fieldtype": "Small Text",
    "label": "Manager Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Attendance Approval",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-07-09 11:43:42.220827",
+ "modified": "2026-07-18 15:50:52.663690",
  "modified_by": "Administrator",
  "module": "Attendance Management System",
  "name": "Attendance Approval",

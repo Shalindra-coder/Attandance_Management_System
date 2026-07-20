@@ -13,6 +13,7 @@
   "column_break_vfoj",
   "is_active",
   "end_date",
+  "branch",
   "overtime_configuration_section",
   "minimum_overtime_hours",
   "round_off_method",
@@ -231,12 +232,18 @@
    "fieldtype": "Date",
    "label": "End Date",
    "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 15:04:18.077273",
+ "modified": "2026-07-18 10:21:55.246295",
  "modified_by": "Administrator",
  "module": "Attendance Management System",
  "name": "Overtime Rule",
