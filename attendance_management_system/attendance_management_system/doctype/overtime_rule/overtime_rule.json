@@ -7,13 +7,13 @@
  "field_order": [
   "rule_name",
   "shift_type",
+  "start_date",
   "column_break_oads",
   "company",
-  "start_date",
+  "branch",
+  "end_date",
   "column_break_vfoj",
   "is_active",
-  "end_date",
-  "branch",
   "overtime_configuration_section",
   "minimum_overtime_hours",
   "round_off_method",
@@ -82,6 +82,7 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Minimum Overtime (Hours)",
+   "non_negative": 1,
    "reqd": 1
   },
   {
@@ -99,6 +100,7 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Maximum Overtime (Hours)",
+   "non_negative": 1,
    "reqd": 1
   },
   {
@@ -109,12 +111,14 @@
    "fieldname": "overtime_starts_after_hours",
    "fieldtype": "Float",
    "label": "Overtime Starts After (Hours)",
+   "non_negative": 1,
    "reqd": 1
   },
   {
    "fieldname": "round_off_value_minutes",
    "fieldtype": "Int",
-   "label": "Round Off Value (Minutes)"
+   "label": "Round Off Value (Minutes)",
+   "non_negative": 1
   },
   {
    "fieldname": "approval_settings_section",
@@ -193,7 +197,8 @@
   {
    "fieldname": "maximum_ot_per_day",
    "fieldtype": "Float",
-   "label": "Maximum OT Per Day"
+   "label": "Maximum OT Per Day",
+   "non_negative": 1
   },
   {
    "fieldname": "column_break_lqfb",
@@ -202,7 +207,8 @@
   {
    "fieldname": "maximum_ot_per_month",
    "fieldtype": "Float",
-   "label": "Maximum OT Per Month"
+   "label": "Maximum OT Per Month",
+   "non_negative": 1
   },
   {
    "fieldname": "remarks_section",
@@ -222,28 +228,26 @@
    "reqd": 1
   },
   {
-   "fieldname": "start_date",
-   "fieldtype": "Date",
-   "label": "Start Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "end_date",
-   "fieldtype": "Date",
-   "label": "End Date",
-   "reqd": 1
-  },
-  {
    "fieldname": "branch",
    "fieldtype": "Link",
    "label": "Branch",
    "options": "Branch"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 10:21:55.246295",
+ "modified": "2026-07-27 10:33:45.010622",
  "modified_by": "Administrator",
  "module": "Attendance Management System",
  "name": "Overtime Rule",

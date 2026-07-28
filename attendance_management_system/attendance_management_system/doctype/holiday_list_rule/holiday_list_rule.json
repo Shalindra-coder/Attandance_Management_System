@@ -2,22 +2,20 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:rule_name",
- "creation": "2026-07-08 12:55:55.067848",
+ "creation": "2026-07-20 11:39:25.026635",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "rule_name",
   "branch",
   "shift_type",
-  "column_break_yptv",
-  "company",
-  "minimum_hours_for_half_day",
-  "column_break_zwfw",
-  "active",
   "start_date",
-  "column_break_iyqp",
-  "minimum_hours_for_present",
-  "end_date"
+  "column_break_aefr",
+  "company_name",
+  "holiday_list",
+  "end_date",
+  "column_break_dhay",
+  "active"
  ],
  "fields": [
   {
@@ -29,46 +27,33 @@
    "unique": 1
   },
   {
-   "fieldname": "column_break_yptv",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "company",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Company",
-   "options": "Company",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_zwfw",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "minimum_hours_for_present",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Minimum Hours for Present",
-   "non_negative": 1,
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_iyqp",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "minimum_hours_for_half_day",
-   "fieldtype": "Float",
-   "label": "Minimum Hours for Half Day",
-   "non_negative": 1,
-   "reqd": 1
-  },
-  {
    "fieldname": "branch",
    "fieldtype": "Link",
    "label": "Branch",
    "options": "Branch",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_aefr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "options": "Company",
    "reqd": 1
+  },
+  {
+   "fieldname": "holiday_list",
+   "fieldtype": "Link",
+   "label": "Holiday List",
+   "options": "Holiday List"
+  },
+  {
+   "fieldname": "column_break_dhay",
+   "fieldtype": "Column Break"
   },
   {
    "default": "0",
@@ -96,10 +81,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-27 10:18:24.870228",
+ "modified": "2026-07-27 10:50:20.800301",
  "modified_by": "Administrator",
  "module": "Attendance Management System",
- "name": "Attendance Rule",
+ "name": "Holiday List Rule",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

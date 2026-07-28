@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class AttendanceApproval(Document):
+class HolidayListRule(Document):
 	pass

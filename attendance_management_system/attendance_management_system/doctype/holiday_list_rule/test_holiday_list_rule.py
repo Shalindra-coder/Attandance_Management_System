@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestAttendanceApproval(FrappeTestCase):
+class TestHolidayListRule(FrappeTestCase):
 	pass

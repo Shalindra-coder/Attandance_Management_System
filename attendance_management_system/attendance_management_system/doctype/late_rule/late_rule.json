@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:rule_name",
  "creation": "2026-07-08 13:52:19.860938",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,13 +9,13 @@
   "basic_information_section",
   "rule_name",
   "shift_type",
+  "start_date",
   "column_break_wytb",
   "company",
-  "start_date",
+  "branch",
+  "end_date",
   "column_break_hlbi",
   "is_active",
-  "end_date",
-  "branch",
   "late_entry_configuration_section",
   "late_after_minutes",
   "column_break_rxqg",
@@ -56,7 +57,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Rule Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "column_break_wytb",
@@ -90,6 +92,7 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Late After (Minutes)",
+   "non_negative": 1,
    "reqd": 1
   },
   {
@@ -99,7 +102,8 @@
   {
    "fieldname": "grace_time_minutes",
    "fieldtype": "Int",
-   "label": "Grace Time (Minutes)"
+   "label": "Grace Time (Minutes)",
+   "non_negative": 1
   },
   {
    "fieldname": "column_break_ywwd",
@@ -121,6 +125,7 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Deduction Starts After",
+   "non_negative": 1,
    "reqd": 1
   },
   {
@@ -130,7 +135,8 @@
   {
    "fieldname": "maximum_late_per_month",
    "fieldtype": "Int",
-   "label": "Maximum Late Per Month"
+   "label": "Maximum Late Per Month",
+   "non_negative": 1
   },
   {
    "fieldname": "column_break_wvhm",
@@ -145,7 +151,8 @@
   {
    "fieldname": "penalty_value",
    "fieldtype": "Float",
-   "label": "Penalty Value"
+   "label": "Penalty Value",
+   "non_negative": 1
   },
   {
    "fieldname": "salary_deduction_section",
@@ -163,6 +170,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.deduct_salary == 1",
    "fieldname": "deduction_unit",
    "fieldtype": "Select",
    "label": "Deduction Unit",
@@ -173,9 +181,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.deduct_salary == 1",
    "fieldname": "deduction_value",
    "fieldtype": "Float",
-   "label": "Deduction Value"
+   "label": "Deduction Value",
+   "non_negative": 1
   },
   {
    "fieldname": "monthly_reset_section",
@@ -230,37 +240,36 @@
    "label": "Description"
   },
   {
-   "fieldname": "start_date",
-   "fieldtype": "Date",
-   "label": "Start Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "end_date",
-   "fieldtype": "Date",
-   "label": "End Date"
-  },
-  {
    "fieldname": "shift_type",
    "fieldtype": "Link",
    "label": "Shift Type",
-   "options": "Shift Type",
-   "reqd": 1
+   "options": "Shift Type"
   },
   {
    "fieldname": "branch",
    "fieldtype": "Link",
    "label": "Branch",
    "options": "Branch"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 10:22:40.577236",
+ "modified": "2026-07-27 10:40:27.423523",
  "modified_by": "Administrator",
  "module": "Attendance Management System",
  "name": "Late Rule",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
